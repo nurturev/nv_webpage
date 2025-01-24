@@ -155,7 +155,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .highlight {
@@ -163,7 +163,7 @@ body {
 }
 
 .heading {
-  font-size: 48px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 1.1;
 }
@@ -180,14 +180,8 @@ body {
   transition: all 0.2s ease;
   border: none;
   cursor: pointer;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
 }
-
-h2.yes {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
 
 .demo-button:hover {
   background-color: rgba(255, 255, 255, 0.9);
@@ -211,8 +205,10 @@ h2.yes {
 }
 
 .feature-text {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.4;
+  font-weight: 100;
+  padding-bottom: 50px;
 }
 
 .hero-image {

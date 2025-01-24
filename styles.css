@@ -183,6 +183,12 @@ body {
   margin-bottom: 50px;
 }
 
+h2.yes {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
 .demo-button:hover {
   background-color: rgba(255, 255, 255, 0.9);
   bottom: 50px;
@@ -951,6 +957,8 @@ body {
     width: 80%;
     max-width: 500px;
     position: relative;
+    color: white;
+    margin-top: 250px;
 }
 
 .close {

@@ -79,7 +79,7 @@ body {
 
 .btn {
   padding: 12px 24px;
-  border-radius: 100px;
+  border-radius: 12px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -382,7 +382,7 @@ body {
 }
 
 .tagline2 {
-  margin-top: 180px;
+  margin-top: 240px;
 }
 
 .gradient-overlays {
@@ -537,7 +537,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 80px;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }

@@ -6,6 +6,7 @@
     <title>Nurturev</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
     <div id="banner" class="banner">
@@ -14,6 +15,8 @@
             <i data-lucide="x"></i>
         </button>
     </div>
+
+    <!-- Navbar -->
     <nav id="navbar" class="navbar">
         <img src="Logo.png" alt="Nurturev" class="logo1" width="250" height="24">
         <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
@@ -21,42 +24,36 @@
         </button>
         <div id="navMenu" class="nav-menu">
             <div class="nav-buttons">
-                <button class="btn btn-text">Request demo</button>
-                <button class="btn btn-primary">Start for free</button>
+                <button id="navDemoButton" class="btn btn-primary">Request Demo</button>
             </div>
         </div>
     </nav>
+
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-                <!-- Left Column -->
-                <div class="left-column">
-                    <div class="stats">
-                        <p><span class="highlight">80% of Deals are Lost.</span> Only 20% are won</p>
-                    </div>
-                    
-                    <div class="heading">
-                        Crack the code on
-                            <span class="highlight">Enterprise</span> <span class="cut">Selling</span> <span class="highlight">Losses</span>
-                    </div>
-                    <p class="feature-text">
-                        Salespeople wrongly target <strong>enterprises as a whole</strong>.
-                        <br>Our AI agents break down enterprises into <strong>qualified buying centers</strong> maximizing your win rates.
-                    </p>
+            <div class="left-column">
+                <div class="stats">
+                    <p><span class="highlight">80% of Deals are Lost.</span> Only 20% are won</p>
                 </div>
-
-
+                <div class="heading">
+                    Crack the code on
+                    <span class="highlight">Enterprise</span> <span class="cut">Selling</span> <span class="highlight">Losses</span>
+                </div>
+                <p class="feature-text">
+                    Salespeople wrongly target <strong>enterprises as a whole</strong>.<br>
+                    Our AI agents break down enterprises into <strong>qualified buying centers</strong> maximizing your win rates.
+                </p>
+            </div>
             <button class="demo-button">Request Demo</button>
-            <!-- Image Container -->
             <picture>
-                <!-- Mobile image -->
                 <source media="(max-width: 768px)" srcset="hero-mobile.png" class="hero-mobile">
-                <!-- Default image -->
                 <img src="hero-image.png" alt="Hero Image" class="hero-image">
             </picture>
-            
         </div>
     </section>
-    
+
+    <!-- Social Proof Section -->
     <section class="social-proof">
         <h2 class="social-proof-title">Trusted by the best Enterprise teams</h2>
         <div class="logo-grid">
@@ -64,26 +61,29 @@
         </div>
     </section>
 
+    <!-- Key Challenges Section -->
     <section class="challenges">
         <div class="challenges-container">
             <div class="pill-label">Key Challenges</div>
             <h2 class="challenges-title">Enterprise sales is HARD</h2>
         </div>
     </section>
+
+    <!-- Enterprise Cards Section -->
     <div class="enterprise-card">
         <div class="text_content">
             <h2 class="card-title">
-                Understanding Complex<br>
+                Understanding Complex
                 <span class="highlightx">Decision-Making Units</span>
             </h2>
             <div class="bullet-points">
                 <div class="bullet-point">
                     <span class="highlightx">*</span> <b>Map buying centers.</b>
-                    <br><p>Identify distinct buying centers within accounts.</p>
+                    <p>Identify distinct buying centers within accounts.</p>
                 </div>
                 <div class="bullet-point">
                     <span class="highlightx">*</span> <b>Discover Actionable Insights</b>
-                    <br><p>Spot intent signals and activities that show what matters most to each entity.</p>
+                    <p>Spot intent signals and activities that show what matters most to each entity.</p>
                 </div>
                 <div class="bullet-point">
                     <span class="highlightx">*</span> <b>Understand Entity Dynamics</b>
@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="image_content">
-            <img src="1.png" alt="card3 image" class="enterprise-image">
+            <img src="1.png" alt="card1 image" class="enterprise-image">
         </div>
     </div>
     <div class="enterprise-card">
@@ -103,7 +103,7 @@
             </h2>
             <div class="bullet-points">
                 <div class="bullet-point">
-                    <span class="highlighty">*</span> <b>Focus on High-Value Targets</b>    
+                    <span class="highlighty">*</span> <b>Focus on High-Value Targets</b>
                     <p>Use smart scoring to find the most important entities to target.</p>
                 </div>
                 <div class="bullet-point">
@@ -117,7 +117,7 @@
             </div>
         </div>
         <div class="image_content">
-            <img src="2.png" alt="card3 image" class="enterprise-image">
+            <img src="2.png" alt="card2 image" class="enterprise-image">
         </div>
     </div>
     <div class="enterprise-card">
@@ -144,6 +144,27 @@
             <img src="3.png" alt="card3 image" class="enterprise-image">
         </div>
     </div>
+
+    <!-- Modal -->
+    <div id="demoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Request Demo</h2>
+            <form id="contactFormModal">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="emailModal" placeholder="Enter your email" name="email-address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your top 2-3 accounts for this quarter?</label>
+                    <textarea id="messageModal" placeholder="Thermofisher, Philips, Subaru, etc." name="user-message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
     <footer class="gradient-footer">
         <div class="gradient-overlays">
             <div class="gradient-3"></div>
@@ -165,14 +186,14 @@
                 <div class="form-container">
                     <div class="form-content">
                         <h3>Get Started</h3>
-                        <form id="contactForm">
+                        <form id="contactFormNonModal">
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Enter your email" name="email-address" required>
+                                <input type="email" id="emailNonModal" placeholder="Enter your email" name="email-address" required>
                             </div>
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" placeholder="What do you want to say?" name="user-message" required></textarea>
+                                <label for="message">Your top 2-3 accounts for this quarter?</label>
+                                <textarea id="messageNonModal" placeholder="Thermofisher, Philips, Subaru, etc." name="user-message" required></textarea>
                             </div>
                             <button type="submit" class="submit-btn">Request Demo</button>
                         </form>
@@ -182,33 +203,11 @@
             <div class="footer-bottom">
                 <p>© 2023 Nurturev Inc. All rights reserved</p>
                 <div class="footer-links">
-                    <a href="#">Terms and Conditions</a>
-                    <span class="dot"></span>
-                    <a href="#">Privacy Policy</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Add this new div for the modal -->
-    <div id="demoModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Request Demo</h2>
-            <form id="contactForm"></form>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email" name="email-address" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" placeholder="What do you want to say?" name="user-message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Request Demo</button>
-
-            </form>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>

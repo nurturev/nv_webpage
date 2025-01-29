@@ -6,7 +6,7 @@
     <title>Nurturev</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
 </head>
 <body>
     <div id="banner" class="banner">
@@ -150,14 +150,14 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Request Demo</h2>
-            <form id="demoForm">
+            <form id="contactFormModal">
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email" name="email-address" required>
+                    <input type="email" id="emailModal" placeholder="Enter your email" name="email-address" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Your top 2-3 accounts for this quarter?</label>
-                    <textarea id="message" placeholder="Thermofisher, Philips, Subaru, etc." name="user-message" required></textarea>
+                    <textarea id="messageModal" placeholder="Thermofisher, Philips, Subaru, etc." name="user-message" required></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Submit</button>
             </form>
@@ -186,14 +186,14 @@
                 <div class="form-container">
                     <div class="form-content">
                         <h3>Get Started</h3>
-                        <form id="contactForm">
+                        <form id="contactFormNonModal">
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Enter your email" name="email-address" required>
+                                <input type="email" id="emailNonModal" placeholder="Enter your email" name="email-address" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Your top 2-3 accounts for this quarter?</label>
-                                <textarea id="message" placeholder="Thermofisher, Philips, Subaru, etc." name="user-message" required></textarea>
+                                <textarea id="messageNonModal" placeholder="Thermofisher, Philips, Subaru, etc." name="user-message" required></textarea>
                             </div>
                             <button type="submit" class="submit-btn">Request Demo</button>
                         </form>
@@ -203,12 +203,11 @@
             <div class="footer-bottom">
                 <p>© 2023 Nurturev Inc. All rights reserved</p>
                 <div class="footer-links">
-                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="/privacy-policy.html">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>

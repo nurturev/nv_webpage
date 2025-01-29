@@ -44,19 +44,58 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Form submission (you can customize this part)
-    const demoForm = document.getElementById("demoForm");
-    demoForm.addEventListener("submit", (e) => {
+    const contactFormModal = document.getElementById("contactFormModal");
+    const contactFormNonModal = document.getElementById("contactFormNonModal")
+    contactFormModal.addEventListener("submit", async (e) => {
         e.preventDefault();
-        // Add your form submission logic here
-        console.log("Form submitted");
+        const email = document.getElementById('emailModal').value;
+        const message = document.getElementById('messageModal').value;
+        console.log("Form submitted modal", email, message);
         modal.style.display = "none";
         document.body.style.overflow = ""; // Re-enable scrolling
+        await submitForm({email, message})
+        contactFormModal.reset()
     });
 
+    contactFormNonModal.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('emailNonModal').value;
+        const message = document.getElementById('messageNonModal').value;
+        console.log("Form submitted non modal", email, message);
+        modal.style.display = "none";
+        document.body.style.overflow = ""; // Re-enable scrolling
+        await submitForm({email, message})
+        contactFormNonModal.reset();
+    });
     // Adjust navbar position on window resize
     window.addEventListener("resize", () => {
         if (window.innerWidth > 768) {
             navMenu.classList.remove("active");
         }
     });
+
+    const submitForm = async (formData) => {
+        const apiEndpoint = import.meta.env.VITE_API_ENDPOINT
+        const apiKey = import.meta.env.VITE_API_KEY
+        try {
+            const response = await fetch(apiEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-api-key':apiKey
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const result = await response.json();
+            console.log('Success:', result);
+
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
 });

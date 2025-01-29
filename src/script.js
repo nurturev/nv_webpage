@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Form submitted modal", email, message);
         modal.style.display = "none";
         document.body.style.overflow = ""; // Re-enable scrolling
-        await submitForm({email, message})
         contactFormModal.reset()
+        await submitForm({email, message})
     });
 
     contactFormNonModal.addEventListener("submit", async (e) => {
@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Form submitted non modal", email, message);
         modal.style.display = "none";
         document.body.style.overflow = ""; // Re-enable scrolling
-        await submitForm({email, message})
         contactFormNonModal.reset();
+        await submitForm({email, message})
     });
     // Adjust navbar position on window resize
     window.addEventListener("resize", () => {

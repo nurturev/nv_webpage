@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
     console.log("Form submitted");
+    contactForm.reset();
     await submitForm({ email, message });
     modal.style.display = "none";
     document.body.style.overflow = ""; // Re-enable scrolling
-    contactForm.reset();
   });
 
   // Adjust navbar position on window resize

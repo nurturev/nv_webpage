@@ -29,7 +29,7 @@ body {
   font-size: clamp(14px, 2.5vw, 16px);
   line-height: 1.5;
   font-weight: 400;
-  padding-left: 500px;
+  width: 100%;
 }
 
 .close-banner {

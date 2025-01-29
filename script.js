@@ -47,10 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const contactFormModal = document.getElementById("contactFormModal");
     const contactFormNonModal = document.getElementById("contactFormNonModal")
     contactFormModal.addEventListener("submit", async (e) => {
-
+        e.preventDefault();
         const email = document.getElementById('emailModal').value;
         const message = document.getElementById('messageModal').value;
-        e.preventDefault();
         console.log("Form submitted modal", email, message);
         modal.style.display = "none";
         document.body.style.overflow = ""; // Re-enable scrolling
@@ -76,8 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const submitForm = async (formData) => {
-        const apiEndpoint = process.env.NEXT_PUBLIC_API_ENDPOINT
-        const apiKey = process.env.NEXT_PUBLIC_API_KEY
+        const apiEndpoint = import.meta.env.VITE_API_ENDPOINT
+        const apiKey = import.meta.env.VITE_API_KEY
         try {
             const response = await fetch(apiEndpoint, {
                 method: 'POST',

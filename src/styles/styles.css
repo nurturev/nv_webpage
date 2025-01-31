@@ -382,7 +382,7 @@ body {
 }
 
 .tagline2 {
-  margin-top: 240px;
+  margin-top: 120px;
 }
 
 .gradient-overlays {
@@ -537,7 +537,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 180px;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }

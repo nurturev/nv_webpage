@@ -5,27 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nurturev</title>
     <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="icon" type="image/x-icon" href="/favicon.png">
 </head>
 <body>
-    <div id="banner" class="banner">
-        <p class="banner-text">$5M expansion pipeline identified for a series E company at $50M ARR leveraging Nurturev</p>
-        <button id="closeBanner" class="close-banner" aria-label="Close banner">
-            <i data-lucide="x"></i>
-        </button>
-    </div>
-
     <!-- Navbar -->
     <nav id="navbar" class="navbar">
         <a href="https://nurturev.com">
-            <img src="/Logo.png" alt="Nurturev" class="logo1" width="250" height="24">
+            <img src="/Logo.svg" alt="Nurturev" class="logo1" width="250" height="32">
         </a>
                 <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
             <i data-lucide="menu"></i>
         </button>
         <div id="navMenu" class="nav-menu">
             <div class="nav-buttons">
+              <a href="#solution">Solution</a>
+              <a href="#usecases">Use cases</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#comparision">Comparison</a>
                 <button id="navDemoButton" class="btn btn-primary">Request Demo</button>
             </div>
         </div>
@@ -33,118 +31,664 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
+        <div class="container"><center>
             <div class="left-column">
-                <div class="stats">
-                    <p><span class="highlight">80% of Deals are Lost.</span> Only 20% are won</p>
+                <div data-aos="fade-up" class="heading">
+                  <span class="highlight">
+                  <span class="flip-container">
+                    <div class="flip-card">
+                      <div class="front">Expand</div>
+                      <div class="back">Land</div>
+                    </div>
+                  </span>
+                </span>
+                 Enterprise Accounts with <br> AI-assisted Precision for 10x Growth
                 </div>
-                <div class="heading">
-                    Crack the code on
-                    <span class="highlight">Enterprise</span> <span class="cut">Selling</span> <span class="highlight">Losses</span>
-                </div>
-                <p class="feature-text">
-                    Salespeople wrongly target <strong>enterprises as a whole</strong>.<br>
-                    Our AI agents break down enterprises into <strong>qualified buying centers</strong> maximizing your win rates.
+                <p  data-aos="fade-up" class="feature-text">
+                  AI Reveals and Prioritizes High-Value Deals in Enterprise Accounts. <br>Your Sales Team Doesn’t need to!
                 </p>
             </div>
-            <button class="demo-button">Request Demo</button>
-            <picture>
+            <button data-aos="fade-up" class="demo-button">Request Demo</button>
+            <button data-aos="fade-up" class="demo-button-secondary"  onclick="window.open('https://cal.com/rajat-jain-nurturev', '_blank')">Talk to the Founders/Advisors</button>
+            <!-- <picture>
                 <source media="(max-width: 768px)" srcset="hero-mobile.png" class="hero-mobile">
                 <img src="/hero-image.png" alt="Hero Image" class="hero-image">
-            </picture>
+            </picture> -->
+            <!-- <picture id="heroPicture" style="cursor: pointer;">
+              <source media="(max-width: 768px)" srcset="/hero-image.png" class="hero-mobile">
+
+              <img data-aos="fade-down" src="/hero-image.png" alt="Hero Image" class="hero-image">
+          </picture> -->
+          <div id="heroVideo" style="cursor: pointer;">
+            <iframe width="100%" height="650" 
+                src="https://www.youtube.com/embed/iuXGYWcRvIk" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
         </div>
+        </center></div>
     </section>
 
     <!-- Social Proof Section -->
-    <section class="social-proof">
-        <h2 class="social-proof-title">Trusted by the best Enterprise teams</h2>
+    <section data-aos="fade-right" class="social-proof">
+        <h2 class="social-proof-title">Visionary customers ❤️️ Nurturev</h2>
         <div class="logo-grid">
-            <img src="/teams.png" alt="Companies using Nurturev including Unsplash, Notion, Intercom, Descript, and Grammarly" class="client-logos">
+        <img src="/teams.png" alt="Companies using Nurturev including Murf and MindTickle" class="client-logos">
         </div>
     </section>
+        <!-- Key Challenges Section -->
+      <section class="challenges">
+          <div data-aos="fade-up" class="challenges-container">
+              <div class="pill-label">Key Challenges</div>
+              <h2 class="challenges-title">Enterprise sales is HARD</h2>
+          </div>
+      </section>
+  
+      <!-- Enterprise Cards Section -->
+      <div data-aos="fade-right" class="enterprise-card">
+          <div class="text_content">
+              <h2 class="card-title">
+                  Understanding Complex
+                  <span class="highlightx">Decision-Making Units</span>
+              </h2>
+              <div class="bullet-points">
+                  <div class="bullet-point">
+                      <span class="highlightx">*</span> <b class="challenges-card-title">Map buying centers.</b>
+                      <p>Identify distinct buying centers within accounts.</p>
+                  </div>
+                  <div class="bullet-point">
+                      <span class="highlightx">*</span> <b>Discover Actionable Insights</b>
+                      <p>Spot intent signals and activities that show what matters most to each entity.</p>
+                  </div>
+                  <div class="bullet-point">
+                      <span class="highlightx">*</span> <b>Understand Entity Dynamics</b>
+                      <p>Learn about competitors, partners, and events that affect decisions.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="image_content">
+              <img src="/1.png" alt="card1 image" class="enterprise-image">
+          </div>
+      </div>
+      <div data-aos="fade-left"  class="enterprise-card">
+          <div class="text_content">
+              <h2 class="card-title">
+                  Finding the
+                  <span class="highlighty">Right Stakeholders</span>
+              </h2>
+              <div class="bullet-points">
+                  <div class="bullet-point">
+                      <span class="highlighty">*</span> <b>Focus on High-Value Targets</b>
+                      <p>Use smart scoring to find the most important entities to target.</p>
+                  </div>
+                  <div class="bullet-point">
+                      <span class="highlighty">*</span> <b>Find Key Stakeholders</b>
+                      <p>Spot the most critical people in the prioritized entities.</p>
+                  </div>
+                  <div class="bullet-point">
+                      <span class="highlighty">*</span> <b>Map Relationships</b>
+                      <p>Understand how decision-makers are connected and who influences who.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="image_content">
+              <img src="/2.png" alt="card2 image" class="enterprise-image">
+          </div>
+      </div>
+      <div data-aos="fade-right"  class="enterprise-card">
+          <div class="text_content">
+              <h2 class="card-title">
+                  Lack of <span class="highlightz">buyer-specific insights</span>
+              </h2>
+              <div class="bullet-points">
+                  <div class="bullet-point">
+                      <span class="highlightz">*</span> <b>Understand Buyer Pain Points</b>
+                      <p>Learn what challenges matter most to each buyer and entity.</p>
+                  </div>
+                  <div class="bullet-point">
+                      <span class="highlightz">*</span> <b>Personalize Your Message:</b>
+                      <p>Match your pitch to their goals, priorities, and success metrics.</p>
+                  </div>
+                  <div class="bullet-point">
+                      <span class="highlightz">*</span> <b>Speak their language</b>
+                      <p>Speak in a way that feels familiar to their team and industry.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="image_content">
+              <img src="/3.png" alt="card3 image" class="enterprise-image">
+          </div>
+      </div>
+    <div data-aos="zoom-in" class="nrev-container">
+      <div class="nrev-header">
+        <div class="pill-label1" id="solution">Solution</div>
+          <h1 class="nrev-title">Try the Nurturev wayy</h1>
+      </div>
 
-    <!-- Key Challenges Section -->
-    <section class="challenges">
-        <div class="challenges-container">
-            <div class="pill-label">Key Challenges</div>
-            <h2 class="challenges-title">Enterprise sales is HARD</h2>
-        </div>
-    </section>
+      <!-- First row: 60/40 split -->
+      <div class="nrev-row-1">
+          <!-- Card 1 - Your Shortcut to Key Decision-Makers -->
+          <div class="nrev-card nrev-card-pink">
+            <h6>
+              Unveil Enterprise Landscape
+            </h6>
+              <h2 class="sol-main-heading">Your Shortcut to Key Decision-Makers.</h2>
+              <p>
+                Stop guessing and start strategizing. We pinpoint exact decision-making units, highlight connections, and reveal buyer intent, transforming assumptions into actionable strategies
+              </p>
+              <right><div class="nrev-placeholder"><img src="solution1.png" width=auto height=200px></div></right>
+          </div>
+          
+          <!-- Card 2 - Prioritize DMUs -->
+          <div class="nrev-card card-bottom-padding card-top-padding nrev-card-dark">
+              <div class="nrev-icon nrev-icon-teal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="6" height="18" rx="1"></rect>
+                      <rect x="10" y="6" width="6" height="14" rx="1"></rect>
+                      <rect x="18" y="10" width="6" height="10" rx="1"></rect>
+                  </svg>
+              </div>
+              <h6>
+                Stop Chasing the Wrong Deals
+              </h6>
+              <h2>Prioritize DMUs for Landing and Expansion.</h2>
+              <p>
+                Tired of wasted time? Nurturev analyzes real-time needs, technologies, and competitors to reveal DMUs ready to buy. Land quick wins, then expand within those accounts.
+              </p>
+          </div>
+      </div>
 
-    <!-- Enterprise Cards Section -->
-    <div class="enterprise-card">
-        <div class="text_content">
-            <h2 class="card-title">
-                Understanding Complex
-                <span class="highlightx">Decision-Making Units</span>
-            </h2>
-            <div class="bullet-points">
-                <div class="bullet-point">
-                    <span class="highlightx">*</span> <b>Map buying centers.</b>
-                    <p>Identify distinct buying centers within accounts.</p>
+      <!-- Second row: 40/60 split -->
+      <div class="nrev-row-2">
+          <!-- Card 3 - Account Plans -->
+          <div class="nrev-card card-bottom-padding nrev-card-dark">
+              <h6>
+                Your Blueprint for Success
+              </h6>
+              <h2>Account Plans That Adapt to You</h2>
+              <p>
+                Forget static plans. We build dynamic, personalized blueprints for success. Nrev uses data to create actionable strategies, tailored to unique client needs, driving intelligent, long-term relationships.              </p><div class="nrev-button-group"><img src="solution2.png" width=auto height=150px>
+              </div>
+          </div>
+          
+          <!-- Card 4 - Drive Exponential Growth -->
+          <div class="nrev-card card-bottom-padding nrev-card-dark">
+            <div class="nrev-icon-row">
+              <div class="nrev-icon-circle">
+                  <img src="person.svg" alt="Person Icon" width="50" height="50">
+              </div>
+              <div class="nrev-icon-circle">
+                  <img src="tools.svg" alt="Tools Icon" width="50" height="50">
+              </div>
+              <div class="nrev-icon-circle">
+                  <img src="setting.svg" alt="Settings Icon" width="50" height="50">
+              </div>
+              <div class="nrev-icon-circle">
+                  <img src="doc.svg" alt="Document Icon" width="50" height="50">
+              </div>
+              <div class="nrev-icon-circle">
+                  <img src="person.svg" alt="User Icon" width="50" height="50">
+              </div>
+              
+          </div>
+          <h6>
+            Beyond the Landing
+          </h6>
+              <h2>Drive Exponential Growth with Whitespace Analysis</h2>
+              <p>
+                Don't miss <b> 10x </b> potential. We provide in-depth whitespace and wallet share analysis to identify missed revenue streams and drive significant growth within existing accounts.              </p>
+          </div>
+      </div>
+
+      <!-- Third row: 60/40 split -->
+      <div class="nrev-row-3">
+          <!-- Card 5 - Personalized AI -->
+          <div class="nrev-card card-bottom-padding nrev-card-dark">
+              <div class="nrev-icon nrev-icon-purple">
+                  <span class="nrev-bold">AI</span>
+              </div>
+              <h6>
+                Your AI Sales Advantage
+              </h6>
+              <h2>Personalized AI Plays That Actually Convert.</h2>
+              <p>
+                Let AI be your secret weapon. We deliver personalized, data-driven sales plays, empowering your team to engage smarter and close deals faster, with insights tailored to specific needs.              </p>
+          </div>
+          
+          <!-- Card 6 - Build Your Winning Partner -->
+          <div class="nrev-sol3 card-bottom-padding nrev-card-gradient">
+              <div class="solution3"><img src="solution3.png" width=auto height=250px></div>
+              <div class="sol3-text">
+                <h6>
+                  Amplify Your Impact 
+                </h6>
+                <h2>Build Your Winning Partner Network</h2>
+              <p>
+                Imagine expanding your reach exponentially. We help you build a strategic partner ecosystem, connecting you with the right allies. It's about creating collaborative strategies that fuel your growth.              </p></div>
+          </div>
+      </div>
+  </div>
+<center>
+    
+  <div data-aos="zoom-in">
+      <div class="pill-label" id="usecases">Use cases</div>
+        <h1 class="nrev-title">Built to power revenue <br> heroes like you</h1>
+        <div class="le-container">
+
+          <div class="le-toggle-container">
+            <button class="le-toggle-button le-active" data-tab="land">LAND</button>
+            <button class="le-toggle-button" data-tab="expand">EXPAND</button>
+            <div class="le-toggle-slider le-land"></div>
+          </div>
+
+            <div class="le-card-container">
+              <!-- Toggle Switch -->
+              
+        
+              <!-- Cards Grid (Desktop) -->
+              <div class="le-cards-grid">
+                <!-- LAND Cards -->
+                <div class="le-card le-land le-visible" data-card="0" data-tab="land">
+                  <div class="le-card-title">CRO / Head of Revenue</div>
+                  <div class="le-icon-container">
+                    <img src="use1.png" height="180px">
+                  </div>
                 </div>
-                <div class="bullet-point">
-                    <span class="highlightx">*</span> <b>Discover Actionable Insights</b>
-                    <p>Spot intent signals and activities that show what matters most to each entity.</p>
+        
+                <div class="le-card le-land le-visible le-active le-land" data-card="1" data-tab="land">
+                  <div class="le-card-title img-bottom-padding">RevOps</div>
+                  <div class="le-icon-container">
+                    <img src="use2.png" height="160px">
+                  </div>
                 </div>
-                <div class="bullet-point">
-                    <span class="highlightx">*</span> <b>Understand Entity Dynamics</b>
-                    <p>Learn about competitors, partners, and events that affect decisions.</p>
+        
+                <div class="le-card le-land le-visible" data-card="2" data-tab="land">
+                  <div class="le-card-title img-bottom-padding"> Account Executive</div>
+                  <div class="le-icon-container">
+                    <img src="use3.png" height="160px">
+                  </div>
                 </div>
+        
+                <!-- EXPAND Cards -->
+                <div class="le-card le-expand" data-card="0" data-tab="expand">
+                  <div class="le-card-title">VP of Account Management / Head of Revenue</div>
+                  <div class="le-icon-container">
+                    <img src="use4.png" height="160px">
+                  </div>
+                </div>
+        
+                <div class="le-card le-expand" data-card="1" data-tab="expand">
+                  <div class="le-card-title img-bottom-padding">RevOps</div>
+                  <div class="le-icon-container">
+                    <img src="use2.png" height="160px">
+                  </div>
+                </div>
+        
+                <div class="le-card le-expand" data-card="2" data-tab="expand">
+                  <div class="le-card-title img-bottom-padding">Account Manager</div>
+                  <div class="le-icon-container">
+                    <img src="use6.png" height="160px">
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Content Section (Desktop) -->
+              <div class="le-content-section">
+                <!-- Left Content -->
+                <div class="le-left-content">
+                  <p class="le-left-subheading">Built to power revenue heroes like you</p>
+                </div>
+        
+                <!-- Right Content -->
+                <div class="le-right-content">
+                  <div class="le-content-item">
+                    <h4 class="le-content-heading" id="le-content-heading-1">Built to power revenue heroes like you</h4>
+                    <p class="le-content-description" id="le-content-description-1">"MindTickle discovered cross-sell opportunities worth $2.4M with Nurturev"</p>
+                  </div>
+                  <div class="le-content-item">
+                    <h4 class="le-content-heading" id="le-content-heading-2">Built to power revenue heroes like you</h4>
+                    <p class="le-content-description" id="le-content-description-2">"MindTickle discovered cross-sell opportunities worth $2.4M with Nurturev"</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Mobile Accordion -->
+              <div class="le-mobile-accordion">
+                <!-- Land Accordions -->
+                <div id="le-land-accordions">
+                  <!-- Land Accordion 1 -->
+                  <div class="le-accordion-item le-land" data-index="0" data-tab="land">
+                    <div class="le-accordion-header">
+                      <h3 class="le-accordion-title">Account Manager</h3>
+                      <p class="le-accordion-subtitle">Managing accounts made easy</p>
+                      <svg class="le-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                    <div class="le-accordion-content">
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">No More Blind Spots</h4>
+                        <p class="le-accordion-section-text">Identify all buying entities, hidden champions, and budget owners upfront.</p>
+                      </div>
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">Close Expansion Deals Faster</h4>
+                        <p class="le-accordion-section-text">Walk into every meeting with pre-warmed insights on decision-makers and team needs.</p>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Land Accordion 2 -->
+                  <div class="le-accordion-item le-land" data-index="1" data-tab="land">
+                    <div class="le-accordion-header">
+                      <h3 class="le-accordion-title">Account Manager</h3>
+                      <p class="le-accordion-subtitle">Managing accounts made easy</p>
+                      <svg class="le-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                    <div class="le-accordion-content">
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">No More Blind Spots</h4>
+                        <p class="le-accordion-section-text">Identify all buying entities, hidden champions, and budget owners upfront.</p>
+                      </div>
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">Close Expansion Deals Faster</h4>
+                        <p class="le-accordion-section-text">Walk into every meeting with pre-warmed insights on decision-makers and team needs.</p>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Land Accordion 3 -->
+                  <div class="le-accordion-item le-land" data-index="2" data-tab="land">
+                    <div class="le-accordion-header">
+                      <h3 class="le-accordion-title">Account Manager</h3>
+                      <p class="le-accordion-subtitle">Managing accounts made easy</p>
+                      <svg class="le-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                    <div class="le-accordion-content">
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">No More Blind Spots</h4>
+                        <p class="le-accordion-section-text">Identify all buying entities, hidden champions, and budget owners upfront.</p>
+                      </div>
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">Close Expansion Deals Faster</h4>
+                        <p class="le-accordion-section-text">Walk into every meeting with pre-warmed insights on decision-makers and team needs.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Expand Accordions -->
+                <div id="le-expand-accordions" style="display: none;">
+                  <!-- Expand Accordion 1 -->
+                  <div class="le-accordion-item le-expand" data-index="0" data-tab="expand">
+                    <div class="le-accordion-header">
+                      <h3 class="le-accordion-title">Account Manager</h3>
+                      <p class="le-accordion-subtitle">Managing accounts made easy</p>
+                      <svg class="le-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                    <div class="le-accordion-content">
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">No More Blind Spots</h4>
+                        <p class="le-accordion-section-text">Identify all buying entities, hidden champions, and budget owners upfront.</p>
+                      </div>
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">Close Expansion Deals Faster</h4>
+                        <p class="le-accordion-section-text">Walk into every meeting with pre-warmed insights on decision-makers and team needs.</p>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Expand Accordion 2 -->
+                  <div class="le-accordion-item le-expand" data-index="1" data-tab="expand">
+                    <div class="le-accordion-header">
+                      <h3 class="le-accordion-title">Account Manager</h3>
+                      <p class="le-accordion-subtitle">Managing accounts made easy</p>
+                      <svg class="le-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                    <div class="le-accordion-content">
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">No More Blind Spots</h4>
+                        <p class="le-accordion-section-text">Identify all buying entities, hidden champions, and budget owners upfront.</p>
+                      </div>
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">Close Expansion Deals Faster</h4>
+                        <p class="le-accordion-section-text">Walk into every meeting with pre-warmed insights on decision-makers and team needs.</p>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Expand Accordion 3 -->
+                  <div class="le-accordion-item le-expand" data-index="2" data-tab="expand">
+                    <div class="le-accordion-header">
+                      <h3 class="le-accordion-title">Account Manager</h3>
+                      <p class="le-accordion-subtitle">Managing accounts made easy</p>
+                      <svg class="le-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                    <div class="le-accordion-content">
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">No More Blind Spots</h4>
+                        <p class="le-accordion-section-text">Identify all buying entities, hidden champions, and budget owners upfront.</p>
+                      </div>
+                      <div class="le-accordion-section">
+                        <h4 class="le-accordion-section-title">Close Expansion Deals Faster</h4>
+                        <p class="le-accordion-section-text">Walk into every meeting with pre-warmed insights on decision-makers and team needs.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+    
+      <div data-aos="fade-up"  class="testimonial-container">
+        <div class="testimonial-quote">
+            “Nurturev transforms account management at Capillary by discovering cross-sell opportunities worth 5M$, allowing AMs to focus on relationship-building and strategy”
+        </div>
+        <div class="testimonial-author">
+            <img src="ishan.png" alt="Profile picture" class="author-image">
+            <div class="author-info">
+                <div class="author-name">Ishan Bhardwaj, Director</div>
+                <div class="author-company">Enterprise Sales & Partnerships, Capillary Technologies</div>
             </div>
         </div>
-        <div class="image_content">
-            <img src="/1.png" alt="card1 image" class="enterprise-image">
-        </div>
-    </div>
-    <div class="enterprise-card">
-        <div class="text_content">
-            <h2 class="card-title">
-                Finding the
-                <span class="highlighty">Right Stakeholders</span>
-            </h2>
-            <div class="bullet-points">
-                <div class="bullet-point">
-                    <span class="highlighty">*</span> <b>Focus on High-Value Targets</b>
-                    <p>Use smart scoring to find the most important entities to target.</p>
-                </div>
-                <div class="bullet-point">
-                    <span class="highlighty">*</span> <b>Find Key Stakeholders</b>
-                    <p>Spot the most critical people in the prioritized entities.</p>
-                </div>
-                <div class="bullet-point">
-                    <span class="highlighty">*</span> <b>Map Relationships</b>
-                    <p>Understand how decision-makers are connected and who influences who.</p>
-                </div>
+    </div></center>
+    <div  data-aos="zoom-in"  class="nurturev-container">
+      <div class="nurturev-text-center">
+        <div class="pill-label" id="comparision">Comparision</div>
+      </div>
+      <h1 class="nurturev-heading">Why choose NRev?</h1>
+      <p class="nurturev-description">
+          Nurturev is purpose-built for enterprises, providing proprietary org and people hierarchy data to power Land & Expand strategies for enterprise deals
+      </p>
+      <div class="nurturev-comparison-wrapper">
+          <!-- Header Row - Using grid for exact alignment -->
+          <div class="nurturev-header-row nurturev-grid-layout">
+            <div class="nurturev-header-cell"></div>
+              <div class="nurturev-header-cell nurturev-header-highlighted" title="Our AI Agents">
+                  <div class="nurturev-logo1">
+                    <img src="com1.png" width="auto" height="30px">
+                  </div>
+              </div>
+              <div class="nurturev-header-cell">
+                  <div class="nurturev-logo2-container" title="ZoomInfo / LinkedIn SN">
+                      <div class="nurturev-logo2">
+                        <img src="com2.png" width="auto" height="30px">
+                      </div>
+                  </div>
+              </div>
+              <div class="nurturev-header-cell">
+                  <div class="nurturev-logo3-container" title="Deep Research Tools">
+                      <div class="nurturev-logo3">
+                        <img src="com3.png" width="auto" height="30px">
+                      </div>
+                  </div>
+              </div>
+              <div class="nurturev-header-cell">
+                  <div class="nurturev-logo4-container" title="Databook / HG Insights">
+                    <img src="com4.png" width="auto" height="30px">
+                  </div>
+              </div>
+          </div>
+
+          <!-- Main Table -->
+          <div class="nurturev-comparison-table">
+              <!-- Table Rows -->
+              <div class="nurturev-table-row">
+                  <div class="nurturev-feature-cell">Org & Buying Center Mapping</div>
+                  <div class="nurturev-data-cell nurturev-highlighted-column" title="✅ AI-driven org charts with detailed hierarchy and buying center attribution (based on semantic search)"><div class="nurturev-check-icon">✓</div></div>
+                  <div class="nurturev-data-cell" title="❌ Basic contact data without comprehensive org mapping."><div class="nurturev-x-icon">✗</div></div>
+                  <div class="nurturev-data-cell" title="❌ Focus on data analysis; lack structured org mapping."><div class="nurturev-x-icon">✗</div></div>
+                  <div class="nurturev-data-cell" title="✅ Provide partial org insights but may lack depth."><div class="nurturev-partial-text">Partial</div></div>
+              </div>
+              <div class="nurturev-table-row">
+                  <div class="nurturev-feature-cell">Real-Time Champion & Decision-Maker Tracking</div>
+                  <div class="nurturev-data-cell nurturev-highlighted-column" title="✅ Monitors role changes and internal influence dynamics."><div class="nurturev-check-icon">✓</div></div>
+                  <div class="nurturev-data-cell" title="❌ Lacks real-time tracking of personnel movements."><div class="nurturev-x-icon">✗</div></div>
+                  <div class="nurturev-data-cell" title="❌ Primarily research-focused without tracking capabilities."><div class="nurturev-x-icon">✗</div></div>
+                  <div class="nurturev-data-cell" title="❌ Limited insights into individual role changes."><div class="nurturev-x-icon">✗</div></div>
+              </div>
+              <div class="nurturev-table-row">
+                  <div class="nurturev-feature-cell">AI-Generated Account Plans & Sales Plays</div>
+                  <div class="nurturev-data-cell nurturev-highlighted-column" title="✅ Offers tailored account strategies, including whitespace analysis and partner identification."><div class="nurturev-check-icon">✓</div></div>
+                  <div class="nurturev-data-cell" title="❌ Does not provide strategic account planning tools."><div class="nurturev-x-icon" >✗</div></div>
+                  <div class="nurturev-data-cell" title="❌ Delivers research data without actionable sales strategies."><div class="nurturev-x-icon">✗</div></div>
+                  <div class="nurturev-data-cell" title="✅ Provides financial insights but lacks comprehensive sales play generation."><div class="nurturev-partial-text">Partial</div></div>
+              </div>
+              <div class="nurturev-table-row">
+                  <div class="nurturev-feature-cell">Intent Signals & Buying Triggers</div>
+                  <div class="nurturev-data-cell nurturev-highlighted-column" title="✅ Integrates diverse signals like job changes, funding events, and partnerships."><div class="nurturev-check-icon">✓</div></div>
+                  <div class="nurturev-data-cell" title="✅ Offers basic intent data such as website visits and funding alerts."><div class="nurturev-partial-text">Partial</div></div>
+                  <div class="nurturev-data-cell" title="❌ Focuses on research without real-time intent data."><div class="nurturev-x-icon">✗</div></div>
+                  <div class="nurturev-data-cell" title="✅ Provides market trends but may lack granular intent signals."><div class="nurturev-check-icon">✓</div></div>
+              </div>
+              <div class="nurturev-table-row">
+                  <div class="nurturev-feature-cell">Competitive & Market Intelligence</div>
+                  <div class="nurturev-data-cell nurturev-highlighted-column" title="✅ Utilizes AI to deliver insights on competitors, tech stacks, and market dynamics."><div class="nurturev-check-icon">✓</div></div>
+                  <div class="nurturev-data-cell" title="✅ Utilizes AI to deliver insights on competitors, tech stacks, and market dynamics."><div class="nurturev-x-icon">✗</div></div>
+                  <div class="nurturev-data-cell" title="✅ Offers extensive research capabilities but requires manual synthesis."><div class="nurturev-partial-text">Partial</div></div>
+                  <div class="nurturev-data-cell" title="✅ Delivers market-level insights but may not delve into specific organizational intelligence."><div class="nurturev-partial-text">Partial</div></div>
+              </div>
+              <div class="nurturev-table-row">
+                  <div class="nurturev-feature-cell">CRM & Sales Tech Integration</div>
+                  <div class="nurturev-data-cell nurturev-highlighted-column" title="✅ Seamlessly integrates with platforms like Salesforce and HubSpot for enriched data."><div class="nurturev-check-icon">✓</div></div>
+                  <div class="nurturev-data-cell" title="✅ Provides CRM synchronization but with limited data enrichment."><div class="nurturev-partial-text">Partial</div></div>
+                  <div class="nurturev-data-cell" title="❌ Lacks direct CRM integration; primarily research-oriented."><div class="nurturev-x-icon">✗</div></div>
+                  <div class="nurturev-data-cell" title="✅ Integrates with CRM systems to provide market data insights."><div class="nurturev-check-icon">✓</div></div>
+              </div>
+              <div class="nurturev-table-row">
+                  <div class="nurturev-feature-cell">Multi-Threading & Deal Execution</div>
+                  <div class="nurturev-data-cell nurturev-highlighted-column outline-bottom" title="✅ Identifies key influencers and recommends strategic actions for deal progression."><div class="nurturev-check-icon">✓</div></div>
+                  <div class="nurturev-data-cell" title="❌ Does not support multi-threading strategies or deal execution guidance."><div class="nurturev-x-icon">✗</div></div>
+                  <div class="nurturev-data-cell" title="❌ Focuses on data provision without actionable deal strategies."><div class="nurturev-x-icon">✗</div></div>
+                  <div class="nurturev-data-cell" title="✅ Offers some recommendations but may not be AI-driven."><div class="nurturev-check-icon">✓</div></div>
+              </div>
+          </div>
+      </div>
+      <div class="nurturev-footnote">Hover over cells for detailed analysis</div>
+  </div>
+    <div data-aos="zoom-in"  class="pricing-section" id="pricing">
+      <div class="pill-label1"> Pricing</div>
+      
+      <h1 class="pricing-heading">What does it cost?</h1>
+  
+      <div class="pricing-container">
+        <!-- Basic Plan -->
+        <div class="pricing-card basic">
+          <div class="circle-icon">
+            <div class="inner-circle"></div>
+          </div>
+          <h2 class="title">Growth</h2>
+          <p class="subtitle">For companies going upmarket</p>
+          <div class="price">$100 - $300 <br><span class="per-month">Per Target Account / year</span></div>
+          <a id="get-started-basic" class="btn">Get Started</a>
+          <div class="divider"></div>
+          <h3 class="features-title">What you will get</h3>
+          <div class="features-list">
+            <div class="feature">
+              <div class="feature-icon"></div>
+              <div class="feature-content">
+                <h4 class="feature-title">Find</h4>
+                <div class="feature-text">Org Hierarchy, Decision Making units, Tech stack, Competitors for ABM strategies</div>
+             </div>
             </div>
-        </div>
-        <div class="image_content">
-            <img src="/2.png" alt="card2 image" class="enterprise-image">
-        </div>
-    </div>
-    <div class="enterprise-card">
-        <div class="text_content">
-            <h2 class="card-title">
-                Lack of <span class="highlightz">buyer-specific insights</span>
-            </h2>
-            <div class="bullet-points">
-                <div class="bullet-point">
-                    <span class="highlightz">*</span> <b>Understand Buyer Pain Points</b>
-                    <p>Learn what challenges matter most to each buyer and entity.</p>
-                </div>
-                <div class="bullet-point">
-                    <span class="highlightz">*</span> <b>Personalize Your Message:</b>
-                    <p>Match your pitch to their goals, priorities, and success metrics.</p>
-                </div>
-                <div class="bullet-point">
-                    <span class="highlightz">*</span> <b>Speak their language</b>
-                    <p>Speak in a way that feels familiar to their team and industry.</p>
-                </div>
+            <div class="feature">
+              <div class="feature-icon"></div>
+              <div class="feature-content">
+                <h4 class="feature-title">Research</h4>
+                <div class="feature-text">Curated AI Agents for contextual account research for ABM Content</div>
+              </div>
+              </div>
+            <div class="feature">
+              <div class="feature-icon"></div>
+              <div class="feature-content">
+                <h4 class="feature-title">Action</h4>
+                <div class="feature-text">Workflows to traverse Decision Making units, Identify Warm Connections, Insights from activities, Dynamic Action Plan for Outbound Sales Strategies</div>
+              </div>
+              </div>
+            <div class="feature">
+              <div class="feature-icon"></div>
+              <div class="feature-content">
+                <h4 class="feature-title">Strategic Upmarket Growth Consulting</h4>
+                <div class="feature-text">Expert guidance for premium market penetration</div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="image_content">
-            <img src="/3.png" alt="card3 image" class="enterprise-image">
+  
+        <!-- Enterprise Plan -->
+        <div class="pricing-card enterprise">
+          <div class="circle-icon">
+            <div class="inner-circle"></div>
+          </div>
+          <h2 class="title">Enterprise</h2>
+          <p class="subtitle">For companies selling to Large Accounts</p>
+          <div class="price"> Custom <br> Pricing </div>
+          <a id="get-started-enterprise" class="btn">Get Started</a>
+          <div class="divider"></div>
+          <h3 class="features-title">What you will get</h3>
+          <div class="features-list">
+            <div class="feature">
+              <div class="feature-icon"></div>
+              <div class="feature-content padding-bottom">
+                <h4 class="feature-title">Everything in Growth Plan</h4>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon"></div>
+              <div class="feature-content">
+                <h4 class="feature-title">Verified Pipeline Discovery</h4>
+                <div class="feature-text">Org Hierarchy, Decision Making units, Tech stack, Competitors for ABM strategies</div>
+             </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon"></div>
+              <div class="feature-content">
+                <h4 class="feature-title">Data-Driven Wallet Share Analysis</h4>
+                <div class="feature-text">Uncover your true market penetration across Enterprises and strategize for increased share</div>
+              </div>
+              </div>
+            <div class="feature">
+              <div class="feature-icon"></div>
+              <div class="feature-content">
+                <h4 class="feature-title">Strategic Territory Planning</h4>
+                <div class="feature-text">Align ABM and Sales strategies for optimal Enterprise account coverage</div>
+              </div>
+              </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal -->
@@ -171,19 +715,25 @@
         <div class="gradient-overlays">
             <div class="gradient-3"></div>
         </div>
-        <div class="container">
+        <div id="demo-form" class="container">
             <div class="footer-grid">
                 <div class="left-column">
                     <div class="hero-content1">
-                        <h2>Unleash the <br> power of <br><b>AI Agents</b></h2>
+                        <h2>Curious how Nurturev can impact your pipeline? </h2>
+                        <p class="text-footer">
+                          Provide your top accounts, and we'll reveal the hidden opportunities. At No Cost to You!
+                        </p>
                     </div>
                     <div class="tagline2">
                         <div class="logo-section">
                             <a href="https://nurturev.com">
                             <div class="logo2"><img src="/Logo.png" alt="Nurturev logo"></div>
                             </a>
+                            
                         </div>
-                        <p class="tagline">Get started now, try our product</p>
+                        <p>
+                          Find you next high value deals!
+                        </p>
                     </div>
                 </div>
                 <div class="form-container">
@@ -192,25 +742,32 @@
                         <form id="contactFormNonModal">
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="emailNonModal" placeholder="Enter your email" name="email-address" required>
+                                <input type="email" id="emailNonModal" placeholder="johndoe@acme.com" name="email-address" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Your top 2-3 accounts for this quarter?</label>
                                 <textarea id="messageNonModal" placeholder="Thermofisher, Philips, Subaru, etc." name="user-message" required></textarea>
                             </div>
-                            <button type="submit" class="submit-btn">Request Demo</button>
+                            <button type="submit" class="submit-btn">Unlock My Pipeline Potential</button>
                         </form>
                     </div>
+                    <p id="confirmationText" class="confirmation-message" style="display: none; color: #4AC29A;"></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2023 Nurturev Inc. All rights reserved</p>
+                <p>© 2025 NRev Labs Pvt. Ltd. All rights reserved</p>
                 <div class="footer-links">
-                    <a href="/privacy-policy.html">Privacy Policy</a>
+                  <a href="https://www.linkedin.com/company/nurturev/" target="_blank">Linkedin</a>
+                    <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
-    <script type="module" src="/src/script.js"></script>
+    <script type="module" src="/src/script.js"></script> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script async src="https://cal.com/embed.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

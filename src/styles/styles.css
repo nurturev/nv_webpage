@@ -277,6 +277,9 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
+  .back{
+    padding-left: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -304,7 +307,7 @@ body {
   background-color: #000000;
   text-align: center;
   padding-top: 4rem;
-  padding-bottom: 12rem;
+  padding-bottom: 4rem;
 }
 
 .social-proof-title {
@@ -604,6 +607,10 @@ body {
     max-width: 100%;
   }
 
+  .back{
+    padding-left: 35px;
+  }
+
   .hero-subtitle {
     margin-top: 8px;
     padding-left: 0;
@@ -660,7 +667,7 @@ body {
   }
   .navbar {
     padding: 12px;
-    
+    max-width: 412px;
   }
 
   .logo1 {
@@ -772,7 +779,7 @@ body {
   }
 
   .hero-content1 p {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .tagline2 {
@@ -2385,7 +2392,6 @@ body {
           padding: 50px 10px 0 10px;
           border-radius: 50px;
           min-height: 400px;
-          margin-top: 50px;
         }
       
         .hero-title {
@@ -2486,7 +2492,7 @@ body {
         }
       
         .hero-content1 p {
-          font-size: 12px;
+          font-size: 20px;
         }
       
         .tagline2 {
@@ -2577,3 +2583,104 @@ body {
       #heroVideo{
         margin-top: 2rem;
       }
+
+      .custom-tooltip [data-tooltip] {
+        position: relative;
+        cursor: pointer;
+      }
+      
+      .custom-tooltip [data-tooltip]:hover::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 10%;
+        left: -3rem;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.75);
+        color: #fff;
+        padding: 6px;
+        border-radius: 5px;
+        white-space: nowrap;
+        font-size: 15px;
+        z-index: 999;
+        opacity: 10;
+        visibility: visible;
+        text-align: center;   
+        max-width: 55rem;
+        white-space: normal; 
+      }
+      
+      .custom-tooltip [data-tooltip]:not(:hover)::after,
+      .custom-tooltip [data-tooltip]:not(:hover)::before {
+        opacity: 0;
+        visibility: hidden;
+      }
+/*Yes*/
+.logo-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: black;
+  height: 100px; /* Adjust height based on logo sizes */
+  align-items: center;
+}
+
+.logo-track {
+  display: flex;
+  animation: marquee 12s linear infinite;
+}
+
+.logo-track img {
+  margin: 0 40px; /* Logo spacing */
+}
+
+.mind1{
+  height: 50px; /* Adjust logo height */
+  width: 100%;
+  margin: 0 40px; /* Logo spacing */
+}
+
+/* Gradient Overlays for dark fade */
+.gradient {
+  position: absolute;
+  top: 0;
+  width: 520px; /* Adjust gradient width */
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.gradient-left {
+  left: 0;
+  background: linear-gradient(to right, black 30%, transparent 100%);
+}
+
+.gradient-right {
+  right: 0;
+  background: linear-gradient(to left, black 30%, transparent 100%);
+}
+
+/* Infinite scroll effect */
+@keyframes marquee {
+  from { transform: translateX(-13.25%); }
+  to { transform: translateX(-80%); } /* half because images repeated once */
+}
+
+/* Mobile responsiveness: static vertical stack */
+@media screen and (max-width: 768px) {
+
+
+  .logo-track img {
+    height: 20px;
+    margin: 10px 10px;
+  }
+
+  /* Hide repeated logos on mobile */
+  .logo-track img.repeat-logo {
+    display: none;
+  }
+
+  /* Remove gradient on mobile */
+  .gradient {
+    display: none;
+  }
+}
